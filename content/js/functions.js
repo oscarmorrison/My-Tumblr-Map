@@ -1,6 +1,7 @@
 var eachEntryJson = [];
 var pageNum = 1;
 var myLayer;
+var username = "http://blog.tahneeandoscar.com";
 
 
 var url = getUrl();
@@ -106,9 +107,9 @@ function getMapCoordinates(array) {
 
 function getUrl() {
     if (pageNum == 1) {
-        return usernames.tumblrPage+"/rss";
+        return username+"/rss";
     } else {
-        return usernames.tumblrPage+"/page/" + pageNum + "/rss";
+        return username+"/page/" + pageNum + "/rss";
     }
 }
 
