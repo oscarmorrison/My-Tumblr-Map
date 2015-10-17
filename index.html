@@ -27,7 +27,12 @@
             .setView([39.833333,-98.583333], 5);
         myLayer = L.mapbox.featureLayer().addTo(map);
 //        var markerCluster = L.markerClusterGroup();
-        var markerCluster = L.markerClusterGroup({ spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false });
+        var markerCluster = L.markerClusterGroup(
+            {spiderfyOnMaxZoom: true, 
+             showCoverageOnHover: false, 
+             zoomToBoundsOnClick: true, 
+             spiderfyDistanceMultiplier: 3
+            });
     </script>
 </body>
 
