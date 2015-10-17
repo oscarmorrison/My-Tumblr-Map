@@ -26,12 +26,9 @@
         var map = L.mapbox.map('map', 'oscarmorrison.nl8eaa66')
             .setView([39.833333,-98.583333], 5);
         myLayer = L.mapbox.featureLayer().addTo(map);
-//        var markerCluster = L.markerClusterGroup();
-        var markerCluster = L.markerClusterGroup(
-            {spiderfyOnMaxZoom: true, 
-             showCoverageOnHover: false, 
-             zoomToBoundsOnClick: true, 
-             spiderfyDistanceMultiplier: 3
+        var markerCluster = L.markerClusterGroup({
+            showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 4
             });
     </script>
 </body>
